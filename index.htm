@@ -1,48 +1,95 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
     <head>
-        <title>
-            
-            
-        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Présentation et Compétences</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 20px;
+                background-color: #f4f4f4;
+            }
+            h1, h2 {
+                color: #333;
+            }
+            ul {
+                list-style-type: none;
+            }
+            ul li {
+                padding: 5px;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+                margin: 10px 0;
+            }
+            .container {
+                max-width: 900px;
+                margin: 0 auto;
+                background-color: white;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+            .section-title {
+                margin-top: 30px;
+            }
+        </style>
     </head>
     <body>
-        <h1>Présentation</h1>
-        <img src="cr7.jpg">
-        <h1>Compétences</h1>
-            <h2>Développement</h2>
-                <ul>HTML</ul>
-                <ul>Python</ul>
-                <ul>Javascript</ul>
-                <ul>CSS</ul>
-                <ul>PHP</ul>
-                <ul>SQL</ul>
-                <ul>Git/Github</ul>
+        <div class="container">
+            <h1>Présentation</h1>
+            <img src="image_de_profil.jpg" alt="Photo de profil">
             
+            <h1 class="section-title">Compétences</h1>
+            
+            <h2>Développement</h2>
+            <ul>
+                <li>HTML</li>
+                <li>Python</li>
+                <li>Javascript</li>
+                <li>CSS</li>
+                <li>PHP</li>
+                <li>SQL</li>
+                <li>Git/Github</li>
+            </ul>
 
             <h2>Système</h2>
-                <ul>Linux
-					<ul>bash</ul>
-				</ul>
+            <ul>
+                <li>Linux</li>
+                <ul>
+                    <li>Bash</li>
+                </ul>
+                <li>Windows</li>
+            </ul>
 
-                <ul>Windows</ul>
-                
             <h2>Réseau</h2>
-			Connaissance en matériels réseaux. 
-            <h2>CEJM</h2>
-            <h2>Langue</h2>
-			Anglais : niveau B1 <br> 
-			Espagnol : niveau B1 
-            <h2>Gestion de projet</h2>
-			Projet salle de jeux 
-            <h2>Virtualisation</h2>
-			Installation et configuration de machine de virtuel.
+            <p>Connaissance en matériels réseaux.</p>
 
-        <h1>Certifications</h1>
-		<img src="cisco.png" >
-		<img src="pix.jpg" >
-        <h1>Situations professionnelles</h1>
-		Actuellement en étude en informatique.
-        <h1>Veille technologique</h1>
-        <h1>Autre</h1>
+            <h2>CEJM</h2>
+
+            <h2>Langues</h2>
+            <p>Anglais : niveau B1</p>
+            <p>Espagnol : niveau B1</p>
+
+            <h2>Gestion de projet</h2>
+            <p>Projet salle de jeux</p>
+
+            <h2>Virtualisation</h2>
+            <p>Installation et configuration de machines virtuelles.</p>
+
+            <h1 class="section-title">Certifications</h1>
+            <img src="cisco.png" alt="Certification Cisco">
+            <img src="pix.jpg" alt="Certification PIX">
+
+            <h1 class="section-title">Situations professionnelles</h1>
+            <p>Actuellement en étude en informatique.</p>
+
+            <h1 class="section-title">Veille technologique</h1>
+
+            <h1 class="section-title">Autre</h1>
+        </div>
     </body>
 </html>
