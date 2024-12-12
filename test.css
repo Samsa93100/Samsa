@@ -1,0 +1,242 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f4f7fc;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+}
+
+.navbar__logo {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar__menu a {
+    color: #fff;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+.navbar__menu a:hover {
+    color: #ffd700;
+}
+
+.navbar__actions {
+    text-align: right;
+}
+
+.navbar__location h5,
+.navbar__location p {
+    margin: 0;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    background-color: #2a3b49;
+    color: #fff;
+}
+
+.hero__content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.hero__image {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.hero__intro {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero__socials a {
+    margin-right: 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.hero__socials a:hover {
+    color: #ffd700;
+}
+
+.hero__actions button {
+    margin: 1rem 0.5rem;
+}
+
+/* Skills Section */
+.skills {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.skills__desc h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.skills__categories {
+    margin-top: 3rem;
+}
+
+.category {
+    background-color: #f0f4f8;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+}
+
+.category__header h4 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.category__header p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Button Styles */
+.btn {
+    padding: 0.8rem 2rem;
+    background-color: #ffd700;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffcc00;
+}
+
+.btn--secondary {
+    background-color: #2a3b49;
+    color: #fff;
+}
+
+.btn--secondary:hover {
+    background-color: #1e2a34;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 2rem;
+    text-align: center;
+}
+
+.footer__brand a {
+    color: #ffd700;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer__links a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.footer__links a:hover {
+    color: #ffd700;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #f4f7fc;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.contact h5 {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    color: #333;
+}
+
+.contact button {
+    padding: 0.8rem 2rem;
+    background-color: #ffd700;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.contact button:hover {
+    background-color: #ffcc00;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero__content,
+    .hero__intro {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .hero__image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .skills__categories {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
